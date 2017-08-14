@@ -1,2 +1,2 @@
 # nodejs
-A collection of Node.js scripts.
+A collection of Node.js scripts/examples.
