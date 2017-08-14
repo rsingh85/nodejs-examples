@@ -9,6 +9,7 @@ const server = http.createServer((req, res) => {
     // inspect request
     console.log("Request method", req.method);
     console.log("Request url", req.url);
+    console.log("Headers", req.headers);
 
     // response
     res.statusCode = 200;
