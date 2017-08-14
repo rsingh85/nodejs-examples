@@ -7,11 +7,18 @@ const port = 3000;
 const server = http.createServer((req, res) => {
     
     // inspect request
+    // req.url is everything after third / (including /)
     console.log("Request method", req.method);
     console.log("Request url", req.url);
     console.log("Headers", req.headers);
-
+    
     // response
+    if (req.url.length > 1) {
+        res.statusCode = 404;
+        res.end();
+        return;
+    }
+
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     res.end('Hello World\n');
