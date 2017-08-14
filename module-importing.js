@@ -1,3 +1,6 @@
-const games = require('./data/games');
+const _ = require('underscore');
+const games = require('./data/games')
 
-console.log(games);
+_.each(games, function(game) {
+    console.log(game.name);
+});

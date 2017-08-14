@@ -4,4 +4,4 @@ const data = [
     { name: 'Microsoft Flight Simulator FSX', platforms: ['PC'] },
 ];
 
-module.exports.data = data;
+module.exports = data;

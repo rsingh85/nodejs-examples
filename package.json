@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-examples",
+  "version": "1.0.0",
+  "description": "A collection of Node.js scripts/examples.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsingh85/nodejs-examples.git"
+  },
+  "author": "Ravinder Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsingh85/nodejs-examples/issues"
+  },
+  "homepage": "https://github.com/rsingh85/nodejs-examples#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
