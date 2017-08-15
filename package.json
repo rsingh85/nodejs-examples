@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rsingh85/nodejs-examples#readme",
   "dependencies": {
+    "express": "^4.15.4",
     "underscore": "^1.8.3"
   }
 }
