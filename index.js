@@ -1,1 +1,1 @@
-console.log('A collection of Node.js examples')
+console.log('A collection of Node.js examples');
