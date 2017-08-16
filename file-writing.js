@@ -1,6 +1,5 @@
 const fs = require('fs');
 
-
 const log = function(stream, message, closeStream) {
     stream.write(message);
 
