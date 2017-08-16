@@ -1,14 +1,15 @@
 const fs = require('fs');
-const logFile = fs.createWriteStream('test.log', { flags: 'a' }); // open stream for appending
 
-const log = function(message, close) {
-    logFile.write(message);
 
-    if (close) {
-        logFile.end();
+const log = function(stream, message, closeStream) {
+    stream.write(message);
+
+    if (closeStream) {
+        stream.end();
     }
 };
 
-log('app started\n', false);
-log('app did something\n', false);
-log('app finished', true);
+const logFileStream = fs.createWriteStream('test.log', { flags: 'a' }); // open stream for appending
+log(logFileStream, 'app started\n', false);
+log(logFileStream, 'app did something\n', false);
+log(logFileStream, 'app finished', true);
