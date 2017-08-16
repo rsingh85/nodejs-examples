@@ -1,7 +1,8 @@
 const fs = require('fs');
+const moment = require('moment');
 
 const log = function(stream, message, closeStream) {
-    stream.write(message);
+    stream.write(`${moment().format('D-MM-Y hh:mm:ss')} - ${message}`);
 
     if (closeStream) {
         stream.end();
