@@ -24,3 +24,10 @@ const PI = 3.142;
 // const can't be assigned to multiple times, the following lines
 // results in: TypeError: Assignment to constant variable
 //PI = 3.14159265359
+
+// TODO:
+// functions (default params, rest params, spread operators, arrow functions)
+// Objects, strings and Object.assign
+// Arrays, Maps and Sets
+// Classes and modules
+// Promises, iterators and generators
